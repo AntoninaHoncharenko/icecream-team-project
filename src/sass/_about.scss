@@ -1,0 +1,269 @@
+.about {
+    padding-top: 55px;
+
+    
+    background-position: top 589px center, center ;
+    background-size: 280px, auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/about2.png),
+    linear-gradient(
+        rgb(255,245,246),
+        rgb(255,245,246));
+
+    @include retina {
+      background-image: url(../images/about2-2x.png),
+    linear-gradient(
+        rgb(255,245,246),
+        rgb(255,245,246));
+    }
+
+    @include tablet {
+      padding-top: 60px;
+      
+    }
+    @include desktop {
+      padding-top: 60px;
+
+      background-position: top 236px center, center ;
+    background-size: 1200px, auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/milk-desk-min.png),
+    linear-gradient(
+        rgb(255,245,246),
+        rgb(255,245,246));
+    }
+    @include retina {
+      background-image: url(../images/milk-desk-2x-min.png),
+    linear-gradient(
+        rgb(255,245,246),
+        rgb(255,245,246));
+
+      }
+    
+    }
+
+   
+  
+  .about__label {
+    @include font(400, 18px, 1.17, 0.04em);
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--middle-accent-text-color);
+      margin-bottom: 15px;
+    display: block;
+  
+    @include tablet {
+      @include font(400, 26px, 1.15, 0.04em);
+      margin-bottom: 16px;
+    }
+    @include desktop {
+      @include font(400, 30px, 1.14, 0.04em);
+      margin-bottom: 16px;
+    }
+  }
+  
+  
+  .about__title-first {
+    @include font(400, 34px, 1.15, 0.04em);
+      font-family: var(--accent-font-family);
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: var(--accent-text-color);
+    margin-bottom: 32px;
+  
+    @include tablet {
+      @include font(400, 48px, 1.15, 0.04em);
+      margin-bottom: 40px;
+    }
+    @include desktop {
+      @include font(400, 58px, 1.14, 0.04em);
+      margin-bottom: 60px;
+    }
+  }
+  
+  
+  .about__position {
+    padding: 0;
+    
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include desktop {
+      flex-direction: row;
+      align-items: flex-start;
+      
+    }
+  }
+  
+  .about__picture {
+    margin-bottom: 40px;
+    width: 100%;
+      width: 280px;
+      height: 279px;
+    display: block;
+    @include tablet {
+      width: 336px;
+      height: 335px;
+      margin-bottom: 0;
+    }
+    @include desktop {
+      width: 501px;
+      height: 501px;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+  
+  .about__item-first {
+    display: flex;
+  
+    @include tablet {
+      margin-right: 32px;
+    }
+    @include desktop {
+      margin-right: 99px; 
+  }
+}
+  
+  .about__item-second {
+    @include desktop {
+      margin-top: 90px;
+    }
+  }
+
+
+  
+  // .about__background {
+  //   position: absolute;
+  //   margin: 0 auto;
+  //   top: 540px;
+  //   z-index: 1;
+  //   left: 20;
+    
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-image: url(../images/about2.png);
+  //   @include retina {
+  //     background-image:url(../images/about2-2x.png);
+  //   }
+
+  //   height: 133px;
+  //   width: 280px;
+  //   max-width: 767px;
+     
+  //   @include tablet {
+  //     display: none;
+  //   }
+  
+  //   @include desktop {
+  //     display: inline-block;
+  //     z-index: 1;
+  //     top: 200;
+  //     left: 0;
+  //     height: 521px;
+  //     width: 100%;
+  //     max-width: 1600px;
+  //     background-image: url(../images/milk-desk.png);
+  //   }
+  //   @include retina {
+  //     background-image:url(../images/milk-desk-2x.png);
+  //   }
+  // }
+  
+  .about__text {
+    @include font(500, 12px, 1.62, 0.02em);
+    font-family: var(--second-font-family);
+    color: var(--description-title-color);
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    z-index: 2;
+    position: relative;
+      width: 220px;
+  
+    @include tablet {
+      width: 334px;
+      @include font(500, 14px, 1.76, 0.02em);
+    }
+    @include desktop {
+      width: 463px;
+      @include font(500, 16px, 1.76, 0.04em);
+      z-index: 10;
+    position: relative;
+    }
+  }
+  
+  .about__text-second {
+    @include font(500, 12px, 1.62, 0.02em);
+    font-family: var(--second-font-family);
+    color: var(--description-text-color);
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+      width: 230px;
+    
+    @include tablet {
+      width: 334px;
+      @include font(500, 14px, 1.76, 0.02em);
+    }
+    @include desktop {
+      width: 463px;
+      @include font(500, 16px, 1.76, 0.04em);
+    }
+  }
+  
+  .button__about {
+    font-family: 'DM Sans';
+    @include font(700, 14px, 1.29, 0.06em);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 176px;
+    min-height: 44px;
+    color: var(--accent-text-color);
+    background-color: #ffffff;
+    border-radius: 22px;
+    border: none;
+    padding: 10px 17px;
+    @include tablet {
+      @include font(700, 16px, 1.31, 0.06em);
+    }
+    @include desktop {
+      @include font(700, 16px, 1.31, 0.06em);
+    }
+  
+    & .big-buttom__icon {
+      fill: var(--accent-text-color);
+    }
+
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: var(--accent-text-color);
+    }
+  } 
+
+  .big-buttom__icon {
+    margin-left: 8px;
+
+    .button__about:hover &,
+    .button__about:focus & {
+      fill: #ffffff;
+    }
+  }
